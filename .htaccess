@@ -1,0 +1,8 @@
+RewriteEngine On 
+Options FollowSymLinks
+
+RewriteBase /utopian
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /utopian/#/$1 [L]
